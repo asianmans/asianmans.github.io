@@ -5,8 +5,8 @@ let ctx;
 let logoColor;
 
 let dvd = {
-    x: 200,
-    y: 300,
+    x: 50,
+    y: 150,
     xspeed: 10,
     yspeed: 10,
     img: new Image()
