@@ -1,12 +1,12 @@
 let speed = 20;
-let scale = 0.17; // Image scale (I work on 1080p monitor)
+let scale = 0.10; // Image scale (I work on 1080p monitor)
 let canvas;
 let ctx;
 let logoColor;
 
 let dvd = {
-    x: 50,
-    y: 150,
+    x: 200,
+    y: 300,
     xspeed: 10,
     yspeed: 10,
     img: new Image()
