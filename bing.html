@@ -96,6 +96,10 @@ h1{
   top: 0px;
 }
 
+div {
+  padding: 60px;
+}
+
 </style>
 
 <title>Asian Man</title>
@@ -117,13 +121,14 @@ h1{
 </ul>
 
 <center>
-<div>
-<video id="myVideo" width="300" controls loop>
+
+<video position="relative" top="30" id="myVideo" width="300" controls loop>
   <source src="videos/John Xina.mp4" type="video/mp4" />
 </video>
-</div>
-<i id="icon" onclick="myFunction()" class="material-icons-outlined md-24" style="font-size:60px;color:red;">play_arrow</i>
+
+<i id="icon" onclick="myFunction()" class="material-icons-outlined md-24" style="display:block;font-size:60px;color:whtie;">play_arrow</i>
 </center>
+
 
 <script>
     function myFunction() {
@@ -144,10 +149,11 @@ h1{
     <video id="myVideo2" width="300" controls loop>
       <source src="videos/Chinese man explaining meme.mp4" type="video/mp4" />
     </video>
-    </div>
-    <i id="icon2" onclick="myFunction2()" class="material-icons-outlined md-24" style="font-size:60px;color:red;">play_arrow</i>
-    </center>
     
+<i id="icon2" onclick="myFunction2()" class="material-icons-outlined md-24" style="display:block;font-size:60px;color:white;">play_arrow</i>
+</center>
+</div>
+
     <script>
         function myFunction2() {
           var vid = document.getElementById("myVideo2");
