@@ -118,7 +118,7 @@ h1{
 
 <center>
 <video id="myVideo" width="300" height="200"  loop>
-    <source src="videos/John Xina.mp4" type="video/mp4" />
+  <source src="videos/John Xina.mp4" type="video/mp4" />
 </video>
 
 <i id="icon" onclick="myFunction()" class="material-icons-outlined md-24" style="font-size:60px;color:red;">play_arrow</i>
@@ -132,12 +132,10 @@ h1{
       var vid = document.getElementById("myVideo");
       if (vid.paused) {
         vid.play();
-        document.getElementById("buton").innerHTML = "Pause";
         document.getElementById("icon").innerHTML ="replay";
       } else {
         vid.pause();
         vid.currentTime=0;
-        document.getElementById("buton").innerHTML = "Play";
         document.getElementById("icon").innerHTML ="play_arrow";
       }
     }
