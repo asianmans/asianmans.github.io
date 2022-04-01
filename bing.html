@@ -97,7 +97,11 @@ h1{
 }
 
 div {
-  padding: 60px;
+  padding: 76px;
+}
+
+#bot {
+  padding: 19px;
 }
 
 </style>
@@ -121,7 +125,6 @@ div {
 </ul>
 
 <center>
-
 <video position="relative" top="30" id="myVideo" width="300" controls loop>
   <source src="videos/John Xina.mp4" type="video/mp4" />
 </video>
@@ -144,31 +147,53 @@ div {
     }
 </script>
 
+<div>
 <center>
-    <div>
-    <video id="myVideo2" width="300" controls loop>
-      <source src="videos/Chinese man explaining meme.mp4" type="video/mp4" />
-    </video>
+<video id="myVideo2" width="300" controls loop>
+   <source src="videos/Chinese man explaining meme.mp4" type="video/mp4" />
+</video>
     
 <i id="icon2" onclick="myFunction2()" class="material-icons-outlined md-24" style="display:block;font-size:60px;color:white;">play_arrow</i>
 </center>
 </div>
 
-    <script>
-        function myFunction2() {
-          var vid = document.getElementById("myVideo2");
-          if (vid.paused) {
-            vid.play();
-            document.getElementById("icon2").innerHTML ="replay";
-          } else {
-            vid.pause();
-            vid.currentTime=0;
-            document.getElementById("icon2").innerHTML ="play_arrow";
-          }
-        }
-    </script>
+<script>
+    function myFunction() {
+      var vid = document.getElementById("myVideo2");
+      if (vid.paused) {
+        vid.play();
+        document.getElementById("icon2").innerHTML ="replay";
+      } else {
+        vid.pause();
+        vid.currentTime=0;
+        document.getElementById("icon2").innerHTML ="play_arrow";
+      }
+    }
+</script>
 
+<div div id="bot">
+<center>
+<video id="myVideo2" width="300" controls loop>
+   <source src="videos/Chinese man explaining meme.mp4" type="video/mp4" />
+</video>
 
+<i id="icon2" onclick="myFunction2()" class="material-icons-outlined md-24" style="display:block;font-size:60px;color:white;">play_arrow</i>
+</center>
+</div>
+
+<script>
+    function myFunction() {
+      var vid = document.getElementById("myVideo2");
+      if (vid.paused) {
+        vid.play();
+        document.getElementById("icon2").innerHTML ="replay";
+      } else {
+        vid.pause();
+        vid.currentTime=0;
+        document.getElementById("icon2").innerHTML ="play_arrow";
+      }
+    }
+</script>
 
 </body>
 </html>
