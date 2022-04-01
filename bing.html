@@ -117,17 +117,15 @@ h1{
 </ul>
 
 <center>
+<div>
 <video id="myVideo" width="300" controls loop>
   <source src="videos/John Xina.mp4" type="video/mp4" />
 </video>
-
+</div>
 <i id="icon" onclick="myFunction()" class="material-icons-outlined md-24" style="font-size:60px;color:red;">play_arrow</i>
 </center>
 
 <script>
-
-
-
     function myFunction() {
       var vid = document.getElementById("myVideo");
       if (vid.paused) {
@@ -139,9 +137,32 @@ h1{
         document.getElementById("icon").innerHTML ="play_arrow";
       }
     }
+</script>
+
+<center>
+    <div>
+    <video id="myVideo2" width="300" controls loop>
+      <source src="videos/Chinese man explaining meme.mp4" type="video/mp4" />
+    </video>
+    </div>
+    <i id="icon2" onclick="myFunction2()" class="material-icons-outlined md-24" style="font-size:60px;color:red;">play_arrow</i>
+    </center>
     
-    
+    <script>
+        function myFunction2() {
+          var vid = document.getElementById("myVideo2");
+          if (vid.paused) {
+            vid.play();
+            document.getElementById("icon2").innerHTML ="replay";
+          } else {
+            vid.pause();
+            vid.currentTime=0;
+            document.getElementById("icon2").innerHTML ="play_arrow";
+          }
+        }
     </script>
+
+
 
 </body>
 </html>
